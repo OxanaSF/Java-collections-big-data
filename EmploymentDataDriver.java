@@ -203,7 +203,6 @@ public class EmploymentDataDriver {
             averageWorkersPerDecadeMap.put(decade, averageWorkers);
         }
 
-
         // Get sum for population per decade
         Map<EmploymentData.Decade, Long> averagePopulationPerDecadeMap = new HashMap<>();
         for (Map.Entry<EmploymentData.Decade, List<Integer>> entry : numberPopulationByDecadeMap.entrySet()) {
@@ -216,6 +215,9 @@ public class EmploymentDataDriver {
             long averagePopulation = totalPopulation / populationValues.size();
             averagePopulationPerDecadeMap.put(decade, averagePopulation);
         }
+
+
+
 
         // Get rate
         Map<EmploymentData.Decade, Double> employmentRate = new HashMap<>();
